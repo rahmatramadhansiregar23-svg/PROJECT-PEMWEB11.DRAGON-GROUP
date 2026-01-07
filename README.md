@@ -1,3 +1,6 @@
+judul project :
+Furniture & Home Decoration
+
 Anggota : 
 1. Annida Kamillatunnuha
 2. Yuliana Dwisiti Azizah
