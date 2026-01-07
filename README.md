@@ -5,9 +5,11 @@ Anggota :
 4. Mahmudin
 
 Deskripsi Proyek
+
 FurniDecor adalah proyek website e-commerce sederhana yang dirancang untuk menampilkan koleksi furniture bergaya minimalis. Website ini mendukung navigasi pop-up, mode gelap, slider gambar, dan struktur halaman yang responsif untuk pengguna Indonesia.
 
 Struktur Utama
+
 ├── index.html
 ├── about.html
 ├── products.html
@@ -25,7 +27,7 @@ Struktur Utama
 └── image/
     └── (gambar produk dan hero)
     
- Fitur Utama
+  Fitur Utama
 - *Navigasi Pop-up Modal*  
   Semua halaman (kecuali Beranda) dapat dibuka dalam modal tanpa reload penuh, meningkatkan pengalaman pengguna.
 
