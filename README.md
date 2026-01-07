@@ -57,6 +57,7 @@ Catatan Pengembangan
 - Slider dapat ditingkatkan dengan animasi transisi dan swipe gesture untuk mobile.
 
 Gambar & Konten
+
 Pastikan semua gambar berada di folder image/ dan memiliki atribut alt yang deskriptif untuk SEO dan aksesibilitas.
 
 Kontribusi
