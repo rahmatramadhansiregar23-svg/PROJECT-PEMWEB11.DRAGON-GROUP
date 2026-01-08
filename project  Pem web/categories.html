@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kategori — FurniDecor</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js"></script>
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="logo">FurniDecor</div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
+    <nav class="nav" aria-expanded="false">
+      <a href="index.html">Beranda</a>
+      <a href="about.html" data-popup>About</a>
+      <a href="products.html" data-popup>Produk</a>
+      <a href="categories.html" data-popup>Kategori</a>
+      <a href="gallery.html" data-popup>Galeri</a>
+      <a href="blog.html" data-popup>Blog</a>
+      <a href="tips.html" data-popup>Tips</a>
+      <a href="contact.html" data-popup>Kontak</a>
+      <a href="cart1.html" data-popup>Keranjang</a>
+      <a href="checkout.html" data-popup>checkout</a>
+    </nav>
+    <button onclick="toggleDarkMode()" style="padding:6px 10px; border-radius:5px; cursor:pointer;">🌙 Dark Mode</button>
+    <button class="btn btn-outline" id="togglePopupMode" aria-pressed="true">Mode Pop-up: ON</button>
+  </header>
+  <main class="container">
+    <h1 id="modalTitle">Kategori</h1>
+    <div class="grid-4">
+      <a class="card card-link" href="products.html" data-popup>
+        <h3>Ruang Tamu</h3>
+        <p>Sofa, coffee table, rak TV.</p>
+      </a>
+      <a class="card card-link" href="products.html" data-popup>
+        <h3>Kamar Tidur</h3>
+        <p>Ranjang, lemari, rak buku.</p>
+      </a>
+      <a class="card card-link" href="products.html" data-popup>
+        <h3>Dekorasi</h3>
+        <p>Lampu hias gantung, karpet.</p>
+      </a>
+    </div>
+  </main>
+</body>
+</html>

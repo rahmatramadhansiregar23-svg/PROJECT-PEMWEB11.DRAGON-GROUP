@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produk — FurniDecor</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/app.js" defer></script>
+
+  <style>
+    /* tambahan kecil biar tombol rapi (boleh dihapus kalau styles.css sudah ada) */
+    .card-actions{
+      display:flex;
+      justify-content:flex-end;
+      margin-top:10px;
+      gap:10px;
+    }
+    .btn-add{
+      padding:8px 12px;
+      border-radius:10px;
+      border:1px solid rgba(0,0,0,.12);
+      background:#2563eb;
+      color:#fff;
+      font-weight:700;
+      cursor:pointer;
+      font-size:13px;
+    }
+    .btn-add:active{transform:translateY(1px)}
+    .card-link{
+      display:block;
+      color:inherit;
+      text-decoration:none;
+    }
+  </style>
+</head>
+
+<body class="page">
+  <header class="site-header">
+    <div class="logo">FurniDecor</div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
+    <nav class="nav" aria-expanded="false">
+      <a href="index.html">Beranda</a>
+      <a href="about.html" data-popup>About</a>
+      <a href="products.html" data-popup>Produk</a>
+      <a href="categories.html" data-popup>Kategori</a>
+      <a href="gallery.html" data-popup>Galeri</a>
+      <a href="blog.html" data-popup>Blog</a>
+      <a href="tips.html" data-popup>Tips</a>
+      <a href="contact.html" data-popup>Kontak</a>
+      <a href="cart1.html" data-popup>Keranjang</a>
+      <a href="checkout.html" data-popup>checkout</a>
+    </nav>
+    <button onclick="toggleDarkMode()" style="padding:6px 10px; border-radius:5px; cursor:pointer;">🌙 Dark Mode</button>
+    <button class="btn btn-outline" id="togglePopupMode" aria-pressed="true">Mode Pop-up: ON</button>
+  </header>
+  <main class="container">
+    <h1 id="modalTitle">Produk</h1>
+
+    <div class="toolbar">
+      <input type="search" class="input" placeholder="Cari produk..." id="searchProducts" />
+      <select class="select" id="filterCategory">
+        <option value="">Semua kategori</option>
+        <option>Ruang Tamu</option>
+        <option>Ruang Makan</option>
+        <option>Kamar Tidur</option>
+        <option>Dekorasi</option>
+      </select>
+    </div>
+
+    <div class="grid-3" id="productGrid">
+
+      <!-- 1 -->
+      <div class="card">
+        <a href="produk/product-detail.html" data-popup class="card-link">
+          <img src="image/sofa.jpg" alt="Sofa 2 seater">
+          <div class="card-body">
+            <h3>Sofa 2 seater</h3>
+            <p>Rp 12.550.000</p>
+          </div>
+        </a>
+
+        <div class="card-actions">
+          <button
+            type="button"
+            class="btn-add"
+            data-add-cart
+            data-id="F-001"
+            data-name="Sofa 2 seater"
+            data-price="Rp 12.550.000"
+          >
+            Tambah
+          </button>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="card">
+        <a href="produk/product-detail2.html" data-popup class="card-link">
+          <img src="image/meja kayu kopi.jpg" alt="Meja Kayu Kopi">
+          <div class="card-body">
+            <h3>Meja Kayu Kopi</h3>
+            <p>Rp 4.000.000</p>
+          </div>
+        </a>
+
+        <div class="card-actions">
+          <button
+            type="button"
+            class="btn-add"
+            data-add-cart
+            data-id="F-002"
+            data-name="Meja Kayu Kopi"
+            data-price="Rp 4.000.000"
+          >
+            Tambah
+          </button>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="card">
+        <a href="produk/product-detail3.html" data-popup class="card-link">
+          <img src="image/rak buku.jpg" alt="Rak buku">
+          <div class="card-body">
+            <h3>rak buku</h3>
+            <p>Rp 300.000</p>
+          </div>
+        </a>
+
+        <div class="card-actions">
+          <button
+            type="button"
+            class="btn-add"
+            data-add-cart
+            data-id="F-003"
+            data-name="rak buku"
+            data-price="Rp 300.000"
+          >
+            Tambah
+          </button>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="card">
+        <a href="produk/product-detail4.html" data-popup class="card-link">
+          <img src="image/lemari.webp" alt="Lemari">
+          <div class="card-body">
+            <h3>lemari</h3>
+            <p>Rp 4.000.000</p>
+          </div>
+        </a>
+
+        <div class="card-actions">
+          <button
+            type="button"
+            class="btn-add"
+            data-add-cart
+            data-id="F-004"
+            data-name="lemari"
+            data-price="Rp 4.000.000"
+          >
+            Tambah
+          </button>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="card">
+        <a href="produk/product-detail5.html" data-popup class="card-link">
+          <img src="image/ranjang minimalis.jpg" alt="Ranjang minimalis">
+          <div class="card-body">
+            <h3>ranjang minimalis</h3>
+            <p>Rp 6.500.000</p>
+          </div>
+        </a>
+
+        <div class="card-actions">
+          <button
+            type="button"
+            class="btn-add"
+            data-add-cart
+            data-id="F-005"
+            data-name="ranjang minimalis"
+            data-price="Rp 6.500.000"
+          >
+            Tambah
+          </button>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="card">
+        <a href="produk/product-detail6.html" data-popup class="card-link">
+          <img src="image/lampu hias gantung.png" alt="Lampu hias gantung">
+          <div class="card-body">
+            <h3>lampu hias gantung</h3>
+            <p>Rp 2.500.000</p>
+          </div>
+        </a>
+
+        <div class="card-actions">
+          <button
+            type="button"
+            class="btn-add"
+            data-add-cart
+            data-id="F-006"
+            data-name="lampu hias gantung"
+            data-price="Rp 2.500.000"
+          >
+            Tambah
+          </button>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="card">
+        <a href="produk/product-detail7.html" data-popup class="card-link">
+          <img src="image/karpet.jpg" alt="Karpet">
+          <div class="card-body">
+            <h3>karpet</h3>
+            <p>Rp 500.000</p>
+          </div>
+        </a>
+
+        <div class="card-actions">
+          <button
+            type="button"
+            class="btn-add"
+            data-add-cart
+            data-id="F-007"
+            data-name="karpet"
+            data-price="Rp 500.000"
+          >
+            Tambah
+          </button>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="card">
+        <a href="produk/product-detail8.html" data-popup class="card-link">
+          <img src="image/rak tv.jpg" alt="Rak TV">
+          <div class="card-body">
+            <h3>rak tv</h3>
+            <p>Rp 750.000</p>
+          </div>
+        </a>
+
+        <div class="card-actions">
+          <button
+            type="button"
+            class="btn-add"
+            data-add-cart
+            data-id="F-008"
+            data-name="rak tv"
+            data-price="Rp 750.000"
+          >
+            Tambah
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

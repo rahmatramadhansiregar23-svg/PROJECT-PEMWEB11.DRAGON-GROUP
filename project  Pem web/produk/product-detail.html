@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Detail Produk — FurniDecor</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/app.js"></script>
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="logo">FurniDecor</div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
+    <nav class="nav" aria-expanded="false">
+      <a href="../index.html">Beranda</a>
+      <a href="../about.html" data-popup>About</a>
+      <a href="../products.html" data-popup>Produk</a>
+      <a href="../categories.html" data-popup>Kategori</a>
+      <a href="../gallery.html" data-popup>Galeri</a>
+      <a href="../blog.html" data-popup>Blog</a>
+      <a href="../tips.html" data-popup>Tips</a>
+      <a href="../contact.html" data-popup>Kontak</a>
+      <a href="../cart1.html" data-popup>Keranjang</a>
+      <a href="../checkout.html" data-popup>checkout</a>
+    </nav>
+    <button onclick="toggleDarkMode()" style="padding:6px 10px; border-radius:5px; cursor:pointer;">🌙 Dark Mode</button>
+    <button class="btn btn-outline" id="togglePopupMode" aria-pressed="true">Mode Pop-up: ON</button>
+  </header>
+  <main class="container product-detail">
+    <div class="grid-2">
+      <div>
+        <img src="image/sofa.jpg" alt="Produk detail" class="responsive">
+      </div>
+
+      <div>
+        <h1 id="modalTitle">Sofa 2 Seater</h1>
+        <p>Kain polyester blend, rangka kayu solid, kombinasi high-density. Cocok untuk ruang tamu modern.</p>
+        <ul class="specs">
+          <li><strong>Bahan:</strong> Kayu oak, kain polyester</li>
+          <li><strong>Ukuran:</strong> 180 × 85 × 75 cm</li>
+          <li><strong>Warna:</strong> Abu-Abu</li>
+        </ul>
+        <div class="price-row">
+          <div class="price">Rp 12.550.000</div>
+          <button class="btn btn-primary" data-add-cart>Tambah ke Keranjang</button>
+        </div>
+        <a href="products.html" class="btn btn-secondary" data-popup>Kembali ke produk</a>
+      </div>
+    </div>
+    
+  </main>
+</body>
+</html>
